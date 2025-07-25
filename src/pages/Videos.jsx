@@ -19,9 +19,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -31,9 +31,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -43,9 +43,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -55,9 +55,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -67,9 +67,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -79,9 +79,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -91,9 +91,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -103,9 +103,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -115,9 +115,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -127,9 +127,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -139,9 +139,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -151,9 +151,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -163,9 +163,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -175,9 +175,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
@@ -187,9 +187,9 @@ function Videos() {
     </a>
 
     <a className="video" href="#">
-      <img src='./videoPreview.png' className="videoPreview"></img>
+      <img src='/videoPreview.png' className="videoPreview"></img>
       <div className="videoDescription">
-        <img src='./user.png'></img>
+        <img src='/user.png'></img>
         <div className="videoTitle">
           <h4>ReactJS in 10 minutes</h4>
           <p>vantuz</p>
