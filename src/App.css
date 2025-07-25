@@ -1,0 +1,415 @@
+* {
+  margin: 0px;
+  font-family: Montserrat;
+}
+
+* {
+  font-weight: 600;
+}
+
+*::selection {
+  background-color: #007bff;
+  color: white;
+}
+
+.CommunityTitle {
+  margin-bottom: 20px;
+}
+
+.container {
+  padding-inline: 17%;
+}
+
+header {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-block: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 40px;
+}
+
+nav ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.burgerNAV {
+  background-color: #007bff;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.burgerNAV.open {
+  max-height: 300px;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.burgerNAV ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 20px;
+  padding-inline: 0px;
+}
+
+.burgerNAV ul li {
+  margin: 0px;
+  text-align: center;
+}
+
+.burgerNAV ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  width: 30px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 4px;
+  background: #007bff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.LogIn {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.LogIn:hover {
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+section {
+  margin-top: 60px;
+}
+
+.navLink {
+  box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.29);
+  padding: 16px;
+  padding-inline: 30px;
+  margin-right: 20px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  background-color: #e6f2ff;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.navLinkActive {
+  box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.29);
+  padding: 16px;
+  background-color: #007bff;
+  padding-inline: 30px;
+  margin-right: 20px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.LogInBG {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.288);
+  transition: all 0.5s ease;
+}
+
+.LogInWindow {
+  background-color: white;
+  height: 50%;
+  width: 25%;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.29);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.LogInWindow a {
+  color: #007bff;
+}
+
+.LogInWindow > * {
+  margin-inline: 13%;
+}
+
+.LogInWindow input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e6f2ff;
+  padding-left: 10px;
+}
+
+.LogInWindow h1 {
+  margin-top: 40px;
+}
+
+.SignUpWindow {
+  background-color: white;
+  height: 50%;
+  width: 25%;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 6px 0px rgba(34, 60, 80, 0.29);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.SignUpWindow > * {
+  margin-inline: 13%;
+}
+
+.SignUpWindow input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e6f2ff;
+  padding-left: 10px;
+}
+
+.SignUpWindow h1 {
+  margin-top: 40px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section nav {
+  margin-bottom: 40px;
+}
+
+.thread {
+  display: block;
+  padding: 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.thread:hover {
+  background-color: rgb(238, 238, 238);
+  transition: all 0.3s ease-in-out;
+}
+
+.threadParent {
+  border-top: 1px solid gainsboro;
+  padding-block: 10px;
+}
+
+.thread-header {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.thread-body img{ 
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.video {
+  display: block;
+  width: 30%;
+  padding: 15px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.video:hover {
+  background-color: rgb(238, 238, 238);
+  transition: all 0.3s ease-in-out;
+}
+
+.videoDescription {
+  display: flex;
+}
+
+img.videoPreview {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.videoDescription img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.videoTitle {
+  margin-top: 2px;
+}
+
+.videoTitle p {
+  font-size: 0.01em;
+  color: gray;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 1px solid rgb(204, 204, 204);
+  background-color: #e6f2ff;
+  margin-bottom: 0px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .container > * {
+  margin-block: 40px;
+}
+
+@media (max-width: 1363px) {
+  .container {
+    padding-inline: 10%;
+  }
+  .video {
+    width: 46%;
+  }
+}
+
+@media (max-width: 1175px) {
+  .container {
+    padding-inline: 6%;
+  }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .video {
+    width: 46%;
+  }
+}
+
+@media (max-width: 876px) {
+  .container {
+    padding-inline: 2%;
+  }
+
+  .CommunityTitle {
+    display: none;
+  }
+
+  .video {
+    width: 44%;
+  }
+
+}
+
+@media (max-width: 646px) {
+  .container {
+    padding-inline: 2%;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+  }
+  
+  .video {
+    width: 100%;
+  }
+}
+
+
+
