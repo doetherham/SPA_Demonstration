@@ -43,7 +43,7 @@ function App() {
                   SetLogInIsClick(!LogInIsClick);}}>Войти</button></li>
             </ul>
           </nav>
-          <div class="burger" onClick={handleClick}>
+          <div className={`burger ${active ? 'close' : ''}`} onClick={handleClick}>
             <span></span>
             <span></span>
             <span></span>

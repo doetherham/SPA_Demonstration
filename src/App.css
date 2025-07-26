@@ -112,20 +112,50 @@ nav ul li a:hover::after {
 }
 
 .burger {
+  position: relative;
   width: 30px;
-  height: 22px;
+  height: 28px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
 }
 
+.burger.close {
+  width: 30px;
+  height: 28px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger.close span:first-of-type{
+  position: absolute;
+  width: 30px;
+  transform: translateY(300%)rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.burger.burger.close span:nth-of-type(2) {
+  display: none;
+}
+
+.burger.close span:last-of-type{
+  position: absolute;
+  width: 30px;
+  transform: translateY(300%)rotate(-45deg);
+  transition: all 0.3s ease;
+}
+
 .burger span {
   height: 4px;
+  width: 30px;
   background: #007bff;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
+
+
 
 .LogIn {
   background-color: white;
