@@ -21,11 +21,7 @@ function App() {
 
   return (
     <div>
-
-      <div className='LogInBG' style={{
-            opacity: LogInIsClick ? '1' : '0',
-            pointerEvents: LogInIsClick ? 'auto' : 'none',
-            }}>
+      <div className={`LogInBG ${LogInIsClick ? 'visible' : ''}`}>
         <form className='LogInWindow'>
           <h1>Вход  </h1>
           <input placeholder='Логин/Номер/Почта'></input>
@@ -42,7 +38,9 @@ function App() {
             <ul>
               <li><a href='#'>Записи</a></li>
               <li><a href='#'>Контакты</a></li>
-              <li><button className='LogIn' onClick={() => SetLogInIsClick(!LogInIsClick)}>Войти</button></li>
+              <li><button className='LogIn' 
+                onClick={() =>{ 
+                  SetLogInIsClick(!LogInIsClick);}}>Войти</button></li>
             </ul>
           </nav>
           <div class="burger" onClick={handleClick}>
@@ -57,7 +55,7 @@ function App() {
         <ul>
           <li><a href='#'>Записи</a></li>
           <li><a href='#'>Контакты</a></li>
-          <li><a href='#'>Войти</a></li>
+          <li><button href='#' onClick={() => {SetLogInIsClick(!LogInIsClick);setActive(false);}}>Войти</button></li>
         </ul>
       </div>
       <section>
@@ -91,7 +89,7 @@ function App() {
         <div className='container'>
           <div>
             <ul>
-              <li><img src='./logo.png' width={'40px'}></img></li>
+              <li><img src={LogoImage} width={'40px'}></img></li>
               <li>asasd@gmail.com</li>
               <li>+777 (777) 777 77-77 </li>
               <li>г.Никакой ул.Пустая</li>

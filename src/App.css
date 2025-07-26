@@ -104,6 +104,13 @@ nav ul li a:hover::after {
   text-decoration: none;
 }
 
+.burgerNAV ul li button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1em;
+}
+
 .burger {
   width: 30px;
   height: 22px;
@@ -171,6 +178,18 @@ section {
 
 .LogInBG {
   position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.288);
+  transition: all 0.5s ease;
+}
+
+.LogInBG.visible {
+  position: fixed;
+  opacity: 1;
+  pointer-events: auto;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.288);
@@ -346,10 +365,16 @@ footer .container {
 }
 
 footer .container div ul {
+  margin-left: 0;
+  padding-left: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+footer .container div ul li {
+  margin-right: 0px;
 }
 
 footer .container > * {
@@ -363,6 +388,10 @@ footer .container > * {
   .video {
     width: 46%;
   }
+
+  .LogInWindow {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1175px) {
@@ -375,6 +404,9 @@ footer .container > * {
   }
   .video {
     width: 46%;
+  }
+  .LogInWindow {
+    width: 60%;
   }
 }
 
@@ -391,11 +423,20 @@ footer .container > * {
     width: 44%;
   }
 
+
 }
 
 @media (max-width: 646px) {
   .container {
     padding-inline: 2%;
+  }
+
+  .videoTitle p{
+    font-size: 0.9em;
+  }
+
+  .videoTitle h4{
+    font-size: 1.1em;
   }
 
   .burger {
@@ -409,6 +450,52 @@ footer .container > * {
   .video {
     width: 100%;
   }
+
+  footer nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .LogInWindow {
+    width: 80%;
+  }
+
+  .LogInWindow {
+    width: 100%;
+    opacity: 1;
+    padding-bottom: 400px;
+    transform: translateY(750px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .LogInBG.visible .LogInWindow{
+    width: 100%;
+    opacity: 1;
+    padding-bottom: 400px;
+    transform: translateY(180px);
+  }
+}
+
+@media (max-width: 480px) {
+  footer .container {
+    padding-inline: 5%;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  header nav {
+    display: none;
+  }
+  
+  .video {
+    width: 100%;
+  }
+
+  
+  
 }
 
 
