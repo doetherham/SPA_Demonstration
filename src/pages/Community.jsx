@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import ThredImage from '../assets/images/image.png'
+import ThredUserImage from '../assets/images/user.png'
 
 function Community() {
   return <motion.div
@@ -11,13 +13,13 @@ function Community() {
       <div className="threadParent">
         <a href="/" className="thread">
           <div className="thread-header">
-            <img src='./user.png' width={'25px'}></img>
+            <img src={ThredUserImage} width={'25px'}></img>
             <p>vantuz</p>•
             <p>1 day ago</p>
           </div>
           <div className="thread-body">
             <p><b>Why it doesn't work</b></p>
-            <img src='./image.png'></img>
+            <img src={ThredImage}></img>
             <div className="feedback">
               <div><h3>♡ 10</h3></div>
               <div><h3>✉︎ 10</h3></div>
@@ -25,16 +27,17 @@ function Community() {
           </div>
         </a>
       </div>
-            <div className="threadParent">
+
+      <div className="threadParent">
         <a href="/" className="thread">
           <div className="thread-header">
-            <img src='./user.png' width={'25px'}></img>
+            <img src={ThredUserImage} width={'25px'}></img>
             <p>vantuz</p>•
             <p>1 day ago</p>
           </div>
           <div className="thread-body">
             <p><b>Why it doesn't work</b></p>
-            <img src='./image.png'></img>
+            <img src={ThredImage}></img>
             <div className="feedback">
               <div><h3>♡ 10</h3></div>
               <div><h3>✉︎ 10</h3></div>
@@ -42,16 +45,17 @@ function Community() {
           </div>
         </a>
       </div>
-            <div className="threadParent">
+
+      <div className="threadParent">
         <a href="/" className="thread">
           <div className="thread-header">
-            <img src='./user.png' width={'25px'}></img>
+            <img src={ThredUserImage} width={'25px'}></img>
             <p>vantuz</p>•
             <p>1 day ago</p>
           </div>
           <div className="thread-body">
             <p><b>Why it doesn't work</b></p>
-            <img src='./image.png'></img>
+            <img src={ThredImage}></img>
             <div className="feedback">
               <div><h3>♡ 10</h3></div>
               <div><h3>✉︎ 10</h3></div>
@@ -59,6 +63,29 @@ function Community() {
           </div>
         </a>
       </div>
+
+      <div className="threadParent">
+        <a href="/" className="thread">
+          <div className="thread-header">
+            <img src={ThredUserImage} width={'25px'}></img>
+            <p>vantuz</p>•
+            <p>1 day ago</p>
+          </div>
+          <div className="thread-body">
+            <p><b>Why it doesn't work</b></p>
+            <img src={ThredImage}></img>
+            <div className="feedback">
+              <div><h3>♡ 10</h3></div>
+              <div><h3>✉︎ 10</h3></div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      
+
+
+      
     </div>
   </motion.div>
 }

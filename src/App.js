@@ -1,7 +1,9 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion';
+
+import LogoImage from './assets/images/logo.png';
 
 import Videos from './pages/Videos';
 import Community from './pages/Community';
@@ -35,7 +37,7 @@ function App() {
 
       <header>
         <div className='container'>
-          <img src='./logo.png' width={'40px'}></img>
+          <img src={LogoImage} width={'40px'}></img>
           <nav>
             <ul>
               <li><a href='#'>Записи</a></li>
@@ -77,11 +79,11 @@ function App() {
               Сообщество
             </Link> 
           </nav>
-          <Routes className='routes'>
-            <Route path="/" element={<Navigate to="/Videos" replace />} />
-            <Route path="/Videos" element={<Videos />} />
-            <Route path="/Community" element={<Community />} />
-          </Routes>
+            <Routes className='routes'>
+              <Route path="/" element={<Navigate to="/Videos" replace />} />
+              <Route path="/Videos" element={<Videos />} />
+              <Route path="/Community" element={<Community />} />
+            </Routes>
         </div>
       </section>
 
